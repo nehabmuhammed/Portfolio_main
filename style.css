@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.skill-zoom{
+    transition: .2s;
+}
+.skill-zoom:hover{
+    transform: scale(1.2) !important;
+}
+.card-body a:hover{
+    background-color: aqua;
+    color: white;
+}
+ a:hover{
+    background-color: aqua;
+    color: white;
+    border-radius: 10px;
+}

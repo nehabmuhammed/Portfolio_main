@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- fav icon link  -->
+     <link rel="shortcut icon" href="./Assets/unnamed.png" type="image/x-icon">
+    <!-- link css  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstarp link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- remixon link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- aos lonk  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body style="background-color: #0f0c12;">
+    <div class="d-flex justify-content-center " style="height: 120px">
+      <nav
+        class="navbar navbar-expand-lg bg-body-dark border rounded-4 mt-4 position-fixed z-1" 
+        style="width: 976px; height: 69px;background: (0,0,0,0.4); backdrop-filter: blur(10px);"
+        data-aos="fade-down"
+      >
+        <div class="container-fluid" >
+          <h3
+            style="
+              background: -webkit-linear-gradient(cyan, purple);
+              background-clip: text;
+              text-decoration: none;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            Portfolio
+          </h3>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" style="color: white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contacts">Contact</a>
+              </li>
+            </ul>
+            <button
+              style="
+                background-color: #1f1f1f;
+                padding: 7px;
+                color: #00a0c5;
+                border: none;
+              "
+              class="me-2 rounded-3"
+            >
+              <i class="ri-sun-line"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section id="home" class="container-fluid mt-5" style="width: 100%">
+  <div class="row justify-content-lg-around justify-content-sm-center">
+    <div class="col-12 col-sm-12 col-lg-6 text-center" data-aos="fade-right">
+      <p class="text-center p-1 rounded-pill fs-3" style="color: #00d8f9;">👏Welcome to my portfolio</p>
+      <h2 class="text-white fs-1">
+        Hi, I'm
+        <span style="background: -webkit-linear-gradient(cyan, purple); background-clip: text; -webkit-text-fill-color: transparent;">Muhammed</span><br />
+        <span style="background: -webkit-linear-gradient(cyan, purple); background-clip: text; -webkit-text-fill-color: transparent;">Nehab</span>
+      </h2>
+      <p class="text-white fs-5">Frontend Developer | React Enthusiast</p>
+      <p class="text-white">
+        Crafting beautiful, performant web experiences with modern<br />
+        technologies. Passionate about clean code and user-centric design.
+      </p>
+      <div>
+        <a href="#projects" class="p-2 rounded-3" style="background-color: #00a0c5; color: white; text-decoration: none;">
+          View Projects ->
+        </a>
+        <a href="https://drive.google.com/file/d/1jSeoJYL6891_9tXB4npxTE9LT4p4bAMz/view?usp=sharing"
+           class="p-2 ms-4 border rounded-3"
+           style="background-color: #141314; color: white; text-decoration: none;"
+           target="_blank">
+           <i class="ri-message-line me-3"></i>Download CV
+        </a>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-12 col-lg-6 text-center mt-4" data-aos="zoom-in-left">
+      <img src="./Assets/nehab.png.jpg" alt="Profile" width="350" height="350" class="border rounded-circle" />
+    </div>
+  </div>
+</section>
+
+    <section style="width: 100%" class="container py-sm-5 mt-lg-1" id="about">
+      <div
+        class="d-flex justify-content-center flex-column align-items-center mt-sm-5 mt-lg-5"
+      >
+        <h1 class="text-white mt-sm-5">
+          About
+          <span
+            style="
+              background: -webkit-linear-gradient(cyan, purple);
+              background-clip: text;
+              text-decoration: none;
+              -webkit-text-fill-color: transparent;
+            "
+            >Me</span
+          >
+        </h1>
+        <div
+          style="
+            width: 80px;
+            height: 4px;
+            background-image: linear-gradient(to right, cyan, purple);
+          "
+        ></div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <p
+          class="mt-5 text-white text-center border skill-zoom rounded-0 p-5 p-sm-1 p-lg-5"
+          style="background-color: #161616; border: 1px solid cyan; width: 70%"
+        >
+          I'm a passionate and highly motivated aspiring frontend developer with
+          a strong foundation in building modern, responsive web applications.
+          My journey into web development began with a fascination for how
+          websites are built, and I've dedicated myself to learning the skills
+          needed to create seamless user experiences. I specialize in HTML, CSS,
+          and JavaScript, and have hands-on experience with React for building
+          dynamic user interfaces. I'm proficient with version control using Git
+          and GitHub, comfortable with design handoffs from Figma, and skilled
+          in using frameworks like Bootstrap to create clean, mobile-first
+          designs. I'm a quick learner with a strong desire to stay current with
+          new web technologies. I am eager to contribute my skills and grow
+          within a professional team
+        </p>
+      </div>
+    </section>
+    <div id="skills" style="width: 100%" class="py-sm-5">
+      <div class="d-flex justify-content-center flex-column align-items-center">
+        <h1 class="text-white mt-sm-5">
+          My
+          <span
+            style="
+              background: -webkit-linear-gradient(cyan, purple);
+              background-clip: text;
+              text-decoration: none;
+              -webkit-text-fill-color: transparent;
+            "
+            >Skills</span
+          >
+        </h1>
+        <div
+          style="
+            width: 80px;
+            height: 4px;
+            background-image: linear-gradient(to right, cyan, purple);
+          "
+          class="mt-2"
+        ></div>
+        <p class="text-white mt-2">
+          Technologies and tools I use to bring ideas to life
+        </p>
+      </div>
+      <div class="sill-card row gap-3 justify-content-center container-fluid">
+        <div
+          style="width: 244px; height: 152px; background-color: #161616"
+          class="rounded-3 col-4 skill-zoom" data-aos="fade-left"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center flex-column" 
+          >
+            <i class="ri-html5-line fs-1 text-white mt-4"></i>
+            <p class="fs-4 text-white">Html</p>
+          </div>
+        </div>
+        <div
+          style="width: 244px; height: 152px; background-color: #161616"
+          class="rounded-3 col-4 skill-zoom" data-aos="fade-left"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center flex-column" 
+          >
+            <i class="ri-css3-fill fs-1 text-white mt-4"></i>
+            <p class="fs-4 text-white">CSS</p>
+          </div>
+        </div>
+        <div
+          style="width: 244px; height: 152px; background-color: #161616"
+          class="rounded-3 col-4 skill-zoom" data-aos="fade-left"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center flex-column" 
+          >
+            <i class="ri-javascript-line fs-1 text-white mt-4"></i>
+            <p class="fs-4 text-white">JavaScript</p>
+          </div>
+        </div>
+        <div
+          style="width: 244px; height: 152px; background-color: #161616"
+          class="rounded-3 col-4 skill-zoom"  data-aos="fade-right"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center flex-column"  data-aos="fade-right"
+          >
+            <i class="ri-reactjs-line fs-1 text-white mt-4"></i>
+            <p class="fs-4 text-white">React Js</p>
+          </div>
+        </div>
+        <div
+          style="width: 244px; height: 152px; background-color: #161616"
+          class="rounded-3 col-4 skill-zoom"  data-aos="fade-right"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center flex-column"
+          >
+            <i class="ri-github-fill fs-1 text-white mt-4"></i>
+            <p class="fs-4 text-white">Git Hub</p>
+          </div>
+        </div>
+        <div
+          style="width: 244px; height: 152px; background-color: #161616"
+          class="rounded-3 col-4 skill-zoom" data-aos="fade-left"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center flex-column" 
+          >
+           <i class="ri-figma-fill fs-1 text-white mt-4"></i>
+            <p class="fs-4 text-white">Figma</p>
+          </div>
+        </div>
+        <div
+          style="width: 244px; height: 152px; background-color: #161616"
+          class="rounded-3 col-4 skill-zoom" data-aos="fade-left"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center flex-column" 
+          >
+            <i class="ri-html5-line fs-1 text-white mt-4"></i>
+            <p class="fs-4 text-white">Html</p>
+          </div>
+        </div>
+        <div
+          style="width: 244px; height: 152px; background-color: #161616"
+          class="rounded-3 col-4 skill-zoom" data-aos="fade-right"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center flex-column" 
+          >
+            <i class="ri-html5-line fs-1 text-white mt-4"></i>
+            <p class="fs-4 text-white">Html</p>
+          </div>
+        </div>
+        <div
+          style="width: 244px; height: 152px; background-color: #161616" 
+          class="rounded-3 col-4 skill-zoom" data-aos="fade-right"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center flex-column" 
+          >
+            <i class="ri-html5-line fs-1 text-white mt-4"></i>
+            <p class="fs-4 text-white">Html</p>
+          </div>
+        </div>
+        <div
+          style="width: 244px; height: 152px; background-color: #161616" data-aos="fade-right"
+          class="rounded-3 col-4 skill-zoom"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center flex-column"
+          >
+            <i class="ri-html5-line fs-1 text-white mt-4"></i>
+            <p class="fs-4 text-white">Html</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="projects"
+      style="margin-top: 200px; clear: both"
+      class="mt-sm-5 mt-lg-1 pt-sm-5"
+    >
+      <div class="d-flex justify-content-center flex-column align-items-center">
+        <h1 class="text-white">
+          Featured<span
+            style="
+              background: -webkit-linear-gradient(cyan, purple);
+              background-clip: text;
+              text-decoration: none;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            Projects</span
+          >
+        </h1>
+        <div
+          style="
+            width: 80px;
+            height: 4px;
+            background-image: linear-gradient(to right, cyan, purple);
+          "
+          class="mt-2"
+        ></div>
+        <p class="text-white mt-2">
+          A selection of my recent work and side projects
+        </p>
+      </div>
+      <div
+        class="row justify-content-lg-evenly d-sm-flex flex-sm-column flex-lg-row align-items-sm-center gap-sm-3 mt-4"
+      >
+        <div
+          class="card col-lg-3 col-sm-11 h-100 skill-zoom"
+          style="background-color: #161616"  data-aos="fade-right"
+        >
+          <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZDp9FHrjfeJUMVQUOuLss5bUzT0QGWcaZA&s" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-dark">Visit Webpage</a>
+             <a
+              href="https://github.com/nehabmuhammed/Uber
+"
+              class="btn btn-dark"
+              >Git Hub</a
+            >
+          </div>
+        </div>
+        <div
+          class="card col-lg-3 text-white col-sm-11 h-100 skill-zoom"
+          style="background-color: #161616" data-aos="fade-right"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZDp9FHrjfeJUMVQUOuLss5bUzT0QGWcaZA&s"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Todo</h5>
+            <p class="card-text">
+              Build Using React Mostly used array functions
+            </p>
+            <a href="todo-final-pearl.vercel.app" class="btn btn-dark"
+              >Visit webpage</a
+            >
+            <a
+              href="https://github.com/nehabmuhammed/Todo_Final"
+              class="btn btn-dark"
+              >Git Hub</a
+            >
+          </div>
+        </div>
+        <div
+          class="card col-lg-3 col-sm-11 text-white h-100 skill-zoom"
+          style="background-color: #161616" data-aos="fade-left"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZDp9FHrjfeJUMVQUOuLss5bUzT0QGWcaZA&s"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Money Manager</h5>
+            <p class="card-text">
+              Developed with react using usestate,useEffect and useref hooks
+            </p>
+            <a href="money-manager-ecru.vercel.app" class="btn btn-dark"
+              >Visit webpage</a
+            >
+            <a
+              href="https://github.com/nehabmuhammed/Money_Manager"
+              class="btn btn-dark"
+              >Git Hub</a
+            >
+          </div>
+        </div>
+        <div
+          class="card col-lg-3 col-sm-11 h-100 skill-zoom text-white"
+          style="background-color: #161616" data-aos="fade-right"
+        >
+          <img
+            src="https://www.luminartechnolab.com/static/assets/img/logo/logo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Luminar Clone</h5>
+            <p class="card-text">
+              Cloned Luminar website using Bootstap and Html
+            </p>
+            <a
+              href="https://nehabmuhammed.github.io/Luminar_Clone/"
+              class="btn btn-dark"
+              >Visit Webpage</a
+            >
+            <a
+              href="https://github.com/nehabmuhammed/Luminar_Clone"
+              class="btn btn-dark"
+              >Git Hub</a
+            >
+          </div>
+        </div>
+        <div
+          class="card col-lg-3 col-sm-11 h-100 text-white skill-zoom"
+          style="background-color: #161616" data-aos="fade-right"
+        >
+          <img
+            src="https://images.prismic.io/loco-blogs/79328284-f97b-489f-924c-eb3b17e34b56_image2.png?auto=compress%2Cformat&rect=0%2C0%2C1999%2C1124&w=1920&h=1080&ar=1.91%3A1"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Leran Mern</h5>
+            <p class="card-text">Responsive webpage to Learn Mern stack</p>
+            <a
+              href="https://nehabmuhammed.github.io/Mern_Responsive/"
+              class="btn btn-dark"
+              >Visit Webpage</a
+            >
+            <a
+              href="https://github.com/nehabmuhammed/Mern_Responsive"
+              class="btn btn-dark"
+              >Git Hub</a
+            >
+          </div>
+        </div>
+        <div
+          class="card col-lg-3 col-sm-11 text-white skill-zoom"
+          style="background-color: #161616" data-aos="fade-left"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3QM4kVbhLVC-ZfTq33flnejesJ3SrbtNog&s"
+            class="img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Uber Clone</h5>
+            <p class="card-text">
+              Cloned Uber official website with Html and Css
+            </p>
+            <a href="https://nehabmuhammed.github.io/Uber/" class="btn btn-dark"
+              >Visit Webpage</a
+            >
+            <a
+              href="https://github.com/nehabmuhammed/Uber
+"
+              class="btn btn-dark"
+              >Git Hub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5" id="contacts">
+      <div class="d-flex justify-content-center flex-column align-items-center">
+        <h1 class="text-white">
+          Get in<span
+            style="
+              background: -webkit-linear-gradient(cyan, purple);
+              background-clip: text;
+              text-decoration: none;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            Touch</span
+          >
+        </h1>
+        <div
+          style="
+            width: 80px;
+            height: 4px;
+            background-image: linear-gradient(to right, cyan, purple);
+          "
+          class="mt-2"
+        ></div>
+        <div class="row justify-content-lg-around justify-content-sm-center">
+          <div class="col-lg-5 col-sm-11 text-white mt-5" data-aos="fade-right">
+            <h1>Let's build something great together ✨</h1>
+            <p>
+              Have a project in mind or just want to chat? Feel free to reach
+              out. I'm always open to discussing new projects, creative ideas,
+              or opportunities to be part of your vision.
+            </p>
+            <p>Connect with me:</p>
+            <div class="d-flex gap-3">
+              <a
+                href="https://github.com/nehabmuhammed"
+                class="fs-1 text-white border rounded-3"
+                style="text-decoration: none"
+                ><i class="ri-github-line"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/n-muhammed-nehab/"
+                class="fs-1 text-white border rounded-3"
+                style="text-decoration: none"
+                ><i class="ri-linkedin-line"></i></a>
+              <a
+                href=https://www.instagram.com/_nehabeey_/""
+                class="fs-1 text-white border rounded-3"
+                style="text-decoration: none"
+                ><i class="ri-instagram-line"></i></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="col-lg-5 col-sm-11 bg-dark border border-secondary rounded-3 mt-5" data-aos="fade-left"
+          >
+            <form>
+              <div class="mb-3 text-white">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 text-white">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text text-white">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label text-white" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="p-5 text-center text-white">
+      &copy; 2025 N Muhammed Nehab.Build with Bootstrap
+    </footer>
+    <script>
+  AOS.init();
+</script>
+  </body>
+</html>
