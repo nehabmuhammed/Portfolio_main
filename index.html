@@ -1,595 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <!-- fav icon link  -->
-     <link rel="shortcut icon" href="./Assets/unnamed.png" type="image/x-icon">
-    <!-- link css  -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- bootstarp link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <!-- remixon link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <!-- aos lonk  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Nehab | Frontend Developer</title>
+    <link rel="shortcut icon" href="./Assets/unnamed.png" type="image/x-icon">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </head>
-  <body style="background-color: #0f0c12;">
-    <div class="d-flex justify-content-center " style="height: 120px">
-      <nav
-        class="navbar navbar-expand-lg bg-body-dark border rounded-4 mt-4  z-1" 
-        style="width: 976px;max-width: 976px; height: 69px;background: (0,0,0,0.4); backdrop-filter: blur(10px);"
-        data-aos="fade-down"
-      >
-        <div class="container-fluid" >
-          <h3
-            style="
-              background: -webkit-linear-gradient(cyan, purple);
-              background-clip: text;
-              text-decoration: none;
-              -webkit-text-fill-color: transparent;
-            "
-          >
-            Portfolio
-          </h3>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon" style="color: white"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#contacts">Contact</a>
-              </li>
-            </ul>
-            <button
-              style="
-                background-color: #1f1f1f;
-                padding: 7px;
-                color: #00a0c5;
-                border: none;
-              "
-              class="me-2 rounded-3"
-            >
-              <i class="ri-sun-line"></i>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <section id="home" class="container-fluid mt-5 p-0" style="width: 100%">
-  <div class="row justify-content-lg-around justify-content-sm-center">
-    <div class="col-12 col-sm-12 col-lg-6 text-center" data-aos="fade-right">
-      <p class="text-center p-1 rounded-pill fs-3" style="color: #00d8f9;">👏Welcome to my portfolio</p>
-      <h2 class="text-white fs-1">
-        Hi, I'm
-        <span style="background: -webkit-linear-gradient(cyan, purple); background-clip: text; -webkit-text-fill-color: transparent;">Muhammed</span><br />
-        <span style="background: -webkit-linear-gradient(cyan, purple); background-clip: text; -webkit-text-fill-color: transparent;">Nehab</span>
-      </h2>
-      <p class="text-white fs-5">Frontend Developer | React Enthusiast</p>
-      <p class="text-white">
-        Crafting beautiful, performant web experiences with modern<br />
-        technologies. Passionate about clean code and user-centric design.
-      </p>
-      <div>
-        <a href="#projects" class="p-2 rounded-3" style="background-color: #00a0c5; color: white; text-decoration: none;">
-          View Projects ->
-        </a>
-        <a href="https://drive.google.com/file/d/1jSeoJYL6891_9tXB4npxTE9LT4p4bAMz/view?usp=sharing"
-           class="p-2 ms-4 border rounded-3"
-           style="background-color: #141314; color: white; text-decoration: none;"
-           target="_blank">
-           <i class="ri-message-line me-3"></i>Download CV
-        </a>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-12 col-lg-6 text-center mt-4" data-aos="zoom-in-left">
-      <img src="./Assets/nehab.png.jpg" alt="Profile" width="350" height="350" class="border rounded-circle" />
-    </div>
-  </div>
-</section>
-
-    <section style="width: 100%" class="container py-sm-5 mt-lg-1" id="about">
-      <div
-        class="d-flex justify-content-center flex-column align-items-center mt-sm-5 mt-lg-5"
-      >
-        <h1 class="text-white mt-sm-5">
-          About
-          <span
-            style="
-              background: -webkit-linear-gradient(cyan, purple);
-              background-clip: text;
-              text-decoration: none;
-              -webkit-text-fill-color: transparent;
-            "
-            >Me</span
-          >
-        </h1>
-        <div
-          style="
-            width: 80px;
-            height: 4px;
-            background-image: linear-gradient(to right, cyan, purple);
-          "
-        ></div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <p
-          class="mt-5 text-white text-center border skill-zoom rounded-0 p-5 p-sm-1 p-lg-5"
-          style="background-color: #161616; border: 1px solid cyan; width: 70%"
-        >
-          I'm a passionate and highly motivated aspiring frontend developer with
-          a strong foundation in building modern, responsive web applications.
-          My journey into web development began with a fascination for how
-          websites are built, and I've dedicated myself to learning the skills
-          needed to create seamless user experiences. I specialize in HTML, CSS,
-          and JavaScript, and have hands-on experience with React for building
-          dynamic user interfaces. I'm proficient with version control using Git
-          and GitHub, comfortable with design handoffs from Figma, and skilled
-          in using frameworks like Bootstrap to create clean, mobile-first
-          designs. I'm a quick learner with a strong desire to stay current with
-          new web technologies. I am eager to contribute my skills and grow
-          within a professional team
-        </p>
-      </div>
-    </section>
-    <div id="skills" style="width: 100%" class="py-sm-5">
-      <div class="d-flex justify-content-center flex-column align-items-center">
-        <h1 class="text-white mt-sm-5">
-          My
-          <span
-            style="
-              background: -webkit-linear-gradient(cyan, purple);
-              background-clip: text;
-              text-decoration: none;
-              -webkit-text-fill-color: transparent;
-            "
-            >Skills</span
-          >
-        </h1>
-        <div
-          style="
-            width: 80px;
-            height: 4px;
-            background-image: linear-gradient(to right, cyan, purple);
-          "
-          class="mt-2"
-        ></div>
-        <p class="text-white mt-2">
-          Technologies and tools I use to bring ideas to life
-        </p>
-      </div>
-      <div class="sill-card row gap-3 justify-content-center container-fluid">
-        <div
-          style="width: 244px; height: 152px; background-color: #161616"
-          class="rounded-3 col-4 skill-zoom" data-aos="fade-left"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center flex-column" 
-          >
-            <i class="ri-html5-line fs-1 text-white mt-4"></i>
-            <p class="fs-4 text-white">Html</p>
-          </div>
-        </div>
-        <div
-          style="width: 244px; height: 152px; background-color: #161616"
-          class="rounded-3 col-4 skill-zoom" data-aos="fade-left"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center flex-column" 
-          >
-            <i class="ri-css3-fill fs-1 text-white mt-4"></i>
-            <p class="fs-4 text-white">CSS</p>
-          </div>
-        </div>
-        <div
-          style="width: 244px; height: 152px; background-color: #161616"
-          class="rounded-3 col-4 skill-zoom" data-aos="fade-left"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center flex-column" 
-          >
-            <i class="ri-javascript-line fs-1 text-white mt-4"></i>
-            <p class="fs-4 text-white">JavaScript</p>
-          </div>
-        </div>
-        <div
-          style="width: 244px; height: 152px; background-color: #161616"
-          class="rounded-3 col-4 skill-zoom"  data-aos="fade-right"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center flex-column"  data-aos="fade-right"
-          >
-            <i class="ri-reactjs-line fs-1 text-white mt-4"></i>
-            <p class="fs-4 text-white">React Js</p>
-          </div>
-        </div>
-        <div
-          style="width: 244px; height: 152px; background-color: #161616"
-          class="rounded-3 col-4 skill-zoom"  data-aos="fade-right"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center flex-column"
-          >
-            <i class="ri-github-fill fs-1 text-white mt-4"></i>
-            <p class="fs-4 text-white">Git Hub</p>
-          </div>
-        </div>
-        <div
-          style="width: 244px; height: 152px; background-color: #161616"
-          class="rounded-3 col-4 skill-zoom" data-aos="fade-left"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center flex-column" 
-          >
-           <i class="ri-figma-fill fs-1 text-white mt-4"></i>
-            <p class="fs-4 text-white">Figma</p>
-          </div>
-        </div>
-        <div
-          style="width: 244px; height: 152px; background-color: #161616"
-          class="rounded-3 col-4 skill-zoom" data-aos="fade-left"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center flex-column" 
-          >
-            <i class="ri-html5-line fs-1 text-white mt-4"></i>
-            <p class="fs-4 text-white">Html</p>
-          </div>
-        </div>
-        <div
-          style="width: 244px; height: 152px; background-color: #161616"
-          class="rounded-3 col-4 skill-zoom" data-aos="fade-right"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center flex-column" 
-          >
-            <i class="ri-html5-line fs-1 text-white mt-4"></i>
-            <p class="fs-4 text-white">Html</p>
-          </div>
-        </div>
-        <div
-          style="width: 244px; height: 152px; background-color: #161616" 
-          class="rounded-3 col-4 skill-zoom" data-aos="fade-right"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center flex-column" 
-          >
-            <i class="ri-html5-line fs-1 text-white mt-4"></i>
-            <p class="fs-4 text-white">Html</p>
-          </div>
-        </div>
-        <div
-          style="width: 244px; height: 152px; background-color: #161616" data-aos="fade-right"
-          class="rounded-3 col-4 skill-zoom"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center flex-column"
-          >
-            <i class="ri-html5-line fs-1 text-white mt-4"></i>
-            <p class="fs-4 text-white">Html</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section id="projects"
-      style="margin-top: 200px; clear: both"
-      class="mt-sm-5 mt-lg-1 pt-sm-5"
-    >
-      <div class="d-flex justify-content-center flex-column align-items-center">
-        <h1 class="text-white">
-          Featured<span
-            style="
-              background: -webkit-linear-gradient(cyan, purple);
-              background-clip: text;
-              text-decoration: none;
-              -webkit-text-fill-color: transparent;
-            "
-          >
-            Projects</span
-          >
-        </h1>
-        <div
-          style="
-            width: 80px;
-            height: 4px;
-            background-image: linear-gradient(to right, cyan, purple);
-          "
-          class="mt-2"
-        ></div>
-        <p class="text-white mt-2">
-          A selection of my recent work and side projects
-        </p>
-      </div>
-      <div
-        class="row justify-content-lg-evenly d-sm-flex flex-sm-column flex-lg-row align-items-sm-center gap-sm-3 mt-4"
-      >
-        <div
-          class="card col-lg-3 col-sm-11 h-100 skill-zoom text-white"
-          style="background-color: #161616"  data-aos="fade-right"
-        >
-          <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZDp9FHrjfeJUMVQUOuLss5bUzT0QGWcaZA&s" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Crypto Tracker</h5>
-            <p class="card-text">
-              Render Top 10 Crypto Currencies using Api and Also a Search pop Up for Currency Info
-            </p>
-            <a href="    crypto-tracker-sage-beta.vercel.app
-" class="btn btn-dark">Visit Webpage</a>
-             <a
-              href="https://github.com/nehabmuhammed/CryptoTracker
-"
-              class="btn btn-dark"
-              >Git Hub</a
-            >
-          </div>
-        </div>
-        <div
-          class="card col-lg-3 text-white col-sm-11 h-100 skill-zoom"
-          style="background-color: #161616" data-aos="fade-right"
-        >
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZDp9FHrjfeJUMVQUOuLss5bUzT0QGWcaZA&s"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Todo</h5>
-            <p class="card-text">
-              Build Using React Mostly used array functions
-            </p>
-            <a href="todo-final-pearl.vercel.app" class="btn btn-dark"
-              >Visit webpage</a
-            >
-            <a
-              href="https://github.com/nehabmuhammed/Todo_Final"
-              class="btn btn-dark"
-              >Git Hub</a
-            >
-          </div>
-        </div>
-        <div
-          class="card col-lg-3 col-sm-11 text-white h-100 skill-zoom"
-          style="background-color: #161616" data-aos="fade-left"
-        >
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZDp9FHrjfeJUMVQUOuLss5bUzT0QGWcaZA&s"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Money Manager</h5>
-            <p class="card-text">
-              Developed with react using usestate,useEffect and useref hooks
-            </p>
-            <a href="money-manager-ecru.vercel.app" class="btn btn-dark"
-              >Visit webpage</a
-            >
-            <a
-              href="https://github.com/nehabmuhammed/Money_Manager"
-              class="btn btn-dark"
-              >Git Hub</a
-            >
-          </div>
-        </div>
-        <div
-          class="card col-lg-3 col-sm-11 h-100 skill-zoom text-white"
-          style="background-color: #161616" data-aos="fade-right"
-        >
-          <img
-            src="https://www.luminartechnolab.com/static/assets/img/logo/logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Luminar Clone</h5>
-            <p class="card-text">
-              Cloned Luminar website using Bootstap and Html
-            </p>
-            <a
-              href="https://nehabmuhammed.github.io/Luminar_Clone/"
-              class="btn btn-dark"
-              >Visit Webpage</a
-            >
-            <a
-              href="https://github.com/nehabmuhammed/Luminar_Clone"
-              class="btn btn-dark"
-              >Git Hub</a
-            >
-          </div>
-        </div>
-        <div
-          class="card col-lg-3 col-sm-11 h-100 text-white skill-zoom"
-          style="background-color: #161616" data-aos="fade-right"
-        >
-          <img
-            src="https://images.prismic.io/loco-blogs/79328284-f97b-489f-924c-eb3b17e34b56_image2.png?auto=compress%2Cformat&rect=0%2C0%2C1999%2C1124&w=1920&h=1080&ar=1.91%3A1"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Leran Mern</h5>
-            <p class="card-text">Responsive webpage to Learn Mern stack</p>
-            <a
-              href="https://nehabmuhammed.github.io/Mern_Responsive/"
-              class="btn btn-dark"
-              >Visit Webpage</a
-            >
-            <a
-              href="https://github.com/nehabmuhammed/Mern_Responsive"
-              class="btn btn-dark"
-              >Git Hub</a
-            >
-          </div>
-        </div>
-        <div
-          class="card col-lg-3 col-sm-11 text-white skill-zoom"
-          style="background-color: #161616" data-aos="fade-left"
-        >
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3QM4kVbhLVC-ZfTq33flnejesJ3SrbtNog&s"
-            class="img-fluid"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Uber Clone</h5>
-            <p class="card-text">
-              Cloned Uber official website with Html and Css
-            </p>
-            <a href="https://nehabmuhammed.github.io/Uber/" class="btn btn-dark"
-              >Visit Webpage</a
-            >
-            <a
-              href="https://github.com/nehabmuhammed/Uber
-"
-              class="btn btn-dark"
-              >Git Hub</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-5" id="contacts">
-      <div class="d-flex justify-content-center flex-column align-items-center">
-        <h1 class="text-white">
-          Get in<span
-            style="
-              background: -webkit-linear-gradient(cyan, purple);
-              background-clip: text;
-              text-decoration: none;
-              -webkit-text-fill-color: transparent;
-            "
-          >
-            Touch</span
-          >
-        </h1>
-        <div
-          style="
-            width: 80px;
-            height: 4px;
-            background-image: linear-gradient(to right, cyan, purple);
-          "
-          class="mt-2"
-        ></div>
-        <div class="row justify-content-lg-around justify-content-sm-center">
-          <div class="col-lg-5 col-sm-11 text-white mt-5" data-aos="fade-right">
-            <h1>Let's build something great together ✨</h1>
-            <p>
-              Have a project in mind or just want to chat? Feel free to reach
-              out. I'm always open to discussing new projects, creative ideas,
-              or opportunities to be part of your vision.
-            </p>
-            <p>Connect with me:</p>
-            <div class="d-flex gap-3">
-              <a
-                href="https://github.com/nehabmuhammed"
-                class="fs-1 text-white border rounded-3"
-                style="text-decoration: none"
-                ><i class="ri-github-line"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/n-muhammed-nehab/"
-                class="fs-1 text-white border rounded-3"
-                style="text-decoration: none"
-                ><i class="ri-linkedin-line"></i></a>
-              <a
-                href=https://www.instagram.com/_nehabeey_/""
-                class="fs-1 text-white border rounded-3"
-                style="text-decoration: none"
-                ><i class="ri-instagram-line"></i></i
-              ></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
-          </div>
-          <div
-            class="col-lg-5 col-sm-11 bg-dark border border-secondary rounded-3 mt-5" data-aos="fade-left"
-          >
-            <form>
-              <div class="mb-3 text-white">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Name</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-              </div>
-              <div class="mb-3 text-white">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email
-                </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text text-white">
-                  We'll never share your email with anyone else.
-                </div>
-              </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label text-white" for="exampleCheck1"
-                  >Check me out</label
-                >
-              </div>
-              <button type="submit" class="btn btn-dark">Submit</button>
-            </form>
-          </div>
         </div>
-      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <p class="fs-5 text-primary">👋 Hello, I'm</p>
+                    <h1 class="display-3 fw-bold">Muhammed <span class="gradient-text">Nehab</span></h1>
+                    <h2 class="h3 mb-4">Frontend Developer & React Enthusiast</h2>
+                    <p class="lead mb-4">I create beautiful, functional, and responsive web experiences using modern technologies. Passionate about clean code and user-centric design.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#projects" class="btn btn-primary-custom">View My Work</a>
+                        <a href="https://drive.google.com/file/d/1KeOr7mLbzReXwLxbwlvxv2kfylmskiEx/view?usp=sharing" class="btn btn-outline-custom">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-delay="200">
+                    <div class="floating">
+                        <img src="./Assets/nehab.png.jpg" alt="Muhammed Nehab" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer class="p-5 text-center text-white">
-      &copy; 2025 N Muhammed Nehab.Build with Bootstrap
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-header text-white" data-aos="fade-up">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+                        <p class="fs-5">I'm a passionate and highly motivated frontend developer with a strong foundation in building modern, responsive web applications. My journey into web development began with a fascination for how websites work, and I've dedicated myself to learning the skills needed to create seamless user experiences.</p>
+                        
+                        <p class="fs-5 mt-3">I specialize in <span class="gradient-text fw-bold">HTML, CSS, JavaScript, and React</span>, with hands-on experience building dynamic user interfaces. I'm proficient with version control using Git and GitHub, comfortable with design handoffs from Figma, and skilled in using frameworks like Bootstrap to create clean, mobile-first designs.</p>
+                        
+                        <p class="fs-5 mt-3">When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or expanding my knowledge in software development best practices.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="ri-checkbox-circle-fill text-primary me-2"></i> Responsive Web Design</li>
+                                    <li class="mb-2"><i class="ri-checkbox-circle-fill text-primary me-2"></i> Modern JavaScript (ES6+)</li>
+                                    <li class="mb-2"><i class="ri-checkbox-circle-fill text-primary me-2"></i> React & Component Architecture</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="ri-checkbox-circle-fill text-primary me-2"></i> Git Version Control</li>
+                                    <li class="mb-2"><i class="ri-checkbox-circle-fill text-primary me-2"></i> REST API Integration</li>
+                                    <li class="mb-2"><i class="ri-checkbox-circle-fill text-primary me-2"></i> UI/UX Principles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-darker">
+        <div class="container">
+            <h2 class="text-center section-header text-white" data-aos="fade-up">My Skills</h2>
+            <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">Technologies and tools I use to bring ideas to life</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <i class="ri-html5-line skill-icon"></i>
+                        <h5>HTML5</h5>
+                        <p class="text-white">Semantic markup and accessibility</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-card">
+                        <i class="ri-css3-fill skill-icon"></i>
+                        <h5>CSS3</h5>
+                        <p class="text-white">Modern layouts and animations</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <i class="ri-javascript-line skill-icon"></i>
+                        <h5>JavaScript</h5>
+                        <p class="text-white">ES6+ and modern features</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="350">
+                    <div class="skill-card">
+                        <i class="ri-reactjs-line skill-icon"></i>
+                        <h5>React</h5>
+                        <p class="text-white">Component-based development</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card">
+                        <i class="ri-bootstrap-fill skill-icon"></i>
+                        <h5>Bootstrap</h5>
+                        <p class="text-white">Responsive framework</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="450">
+                    <div class="skill-card">
+                        <i class="ri-git-branch-line skill-icon"></i>
+                        <h5>Git</h5>
+                        <p class="text-white">Version control system</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-card">
+                        <i class="ri-github-fill skill-icon"></i>
+                        <h5>GitHub</h5>
+                        <p class="text-white">Code collaboration</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="550">
+                    <div class="skill-card">
+                        <i class="ri-figma-fill skill-icon"></i>
+                        <h5>Figma</h5>
+                        <p class="text-white">UI/UX design tool</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-header text-white" data-aos="fade-up">My Projects</h2>
+            <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">A selection of my recent work and side projects</p>
+            
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <img src="./Assets/crypto.png" class="project-img" alt="Crypto Tracker">
+                        <div class="project-content">
+                            <h4>Crypto Tracker</h4>
+                            <p class="text-white">A responsive web application that displays real-time cryptocurrency data using the CoinGecko API with dynamic search and sorting features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-3 mt-3">
+                                <a href="https://crypto-tracker-sage-beta.vercel.app/" class="btn btn-primary-custom btn-sm">Live Demo</a>
+                                <a href="https://github.com/nehabmuhammed/CryptoTracker" class="btn btn-outline-custom btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <img src="./Assets/expense.png" class="project-img" alt="Money Manager">
+                        <div class="project-content">
+                            <h4>Money Manager</h4>
+                            <p class="text-white">An interactive expense tracking application to monitor income and expenses with visualization of financial activity.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Hooks</span>
+                                <span class="tech-tag">Local Storage</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                            <div class="d-flex gap-3 mt-3">
+                                <a href="https://money-manager-ecru.vercel.app/" class="btn btn-primary-custom btn-sm">Live Demo</a>
+                                <a href="https://github.com/nehabmuhammed/Money_Manager" class="btn btn-outline-custom btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <img src="./Assets/todo.png" class="project-img" alt="Todo App">
+                        <div class="project-content">
+                            <h4>Todo Application</h4>
+                            <p class="text-white">A feature-rich todo application with task creation, editing, deletion, and local storage persistence.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Hooks</span>
+                                <span class="tech-tag">Local Storage</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <div class="d-flex gap-3 mt-3">
+                                <a href="https://todo-final-pearl.vercel.app/" class="btn btn-primary-custom btn-sm">Live Demo</a>
+                                <a href="https://github.com/nehabmuhammed/Todo_Final" class="btn btn-outline-custom btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card">
+                        <img src="./Assets/Screenshot 2025-10-28 165009.png" class="project-img" alt="Portfolio Website">
+                        <div class="project-content">
+                            <h4>Portfolio Website</h4>
+                            <p class="text-white">A responsive portfolio website showcasing projects and skills with modern design and smooth animations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <div class="d-flex gap-3 mt-3">
+                                <a href="https://portfolio-main-ochre-two.vercel.app/" class="btn btn-primary-custom btn-sm">Live Demo</a>
+                                <a href="https://github.com/nehabmuhammed/Portfolio_main" class="btn btn-outline-custom btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-darker">
+        <div class="container">
+            <h2 class="text-center section-header text-white" data-aos="fade-up">Get In Touch</h2>
+            <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">Let's work together to bring your ideas to life</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-card">
+                                <i class="ri-mail-line contact-icon"></i>
+                                <h5>Email Me</h5>
+                                <p class="text-muted">nehab64m@gmail.com</p>
+                                <a href="mailto:nehab64m@gmail.com" class="btn btn-primary-custom btn-sm">Send Email</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="contact-card">
+                                <i class="ri-linkedin-box-fill contact-icon"></i>
+                                <h5>LinkedIn</h5>
+                                <p class="text-muted">Let's connect professionally</p>
+                                <a href="https://linkedin.com/in/n-muhammed-nehab" class="btn btn-primary-custom btn-sm" target="_blank">Visit Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+                        <h4 class="mb-4">Find me on social media</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/nehabmuhammed" target="_blank"><i class="ri-github-fill"></i></a>
+                            <a href="https://linkedin.com/in/n-muhammed-nehab" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                            <a href="https://www.instagram.com/_nehabeey_/" target="_blank"><i class="ri-instagram-line"></i></a>
+                            <a href="#" target="_blank"><i class="ri-twitter-x-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Muhammed Nehab. All rights reserved.</p>
+            <p class="text-muted">Built with ❤️ using Bootstrap</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
-  AOS.init();
-</script>
-  </body>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(15, 12, 18, 0.95)';
+                navbar.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(15, 12, 18, 0.8)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
 </html>
